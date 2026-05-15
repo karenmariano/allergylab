@@ -13,7 +13,7 @@ jobs:
           cd Part7a
           docker build -t ${{ secrets.DOCKER_USERNAME }}/al-app:latest ./app
           docker build -t ${{ secrets.DOCKER_USERNAME }}/al-db-loader:latest ./db-loader
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/al-emailer:latest ./email
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/al-email:latest ./email
       - name: Log in to Docker
         uses: docker/login-action@v3
         with:
